@@ -1,6 +1,6 @@
 # MyInvDB, a simple to use inventory app
 
-MyInvDB is a simple PHP, MySQL, Bootstrap responsive design simple to use inventory app.
+MyInvDB is a simple PHP, MySQL, Bootstrap simple to use inventory app.
 
 
 
@@ -147,9 +147,9 @@ To start the app use the following command
 │ 
 ├── .gitignore
 │
-├── package.json
+├── 
 │
-├── package-lock.json
+├── 
 │
 └── README.md            
 ```
