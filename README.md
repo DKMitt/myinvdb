@@ -38,10 +38,10 @@ App .
 
 Description of website technologies used to develop this app.
 
-- 
-- 
-- All of them are transitive dependencies of the provided npm package.
-  ​
+- PHP
+- MySQL database
+- Bootstrap 4.0
+
 
 __<u>Dependencies</u>__
 
@@ -97,53 +97,8 @@ To start the app use the following command
 │   │
 │   └── 
 │ 
-├── public
-│   │
-│   ├── assets
-│   │   │
-│   │   └── img
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       ├── 
-│   │       │
-│   │       └── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   └── 
-│
-├── src
-│   │
-│   ├── img
-│   │   │
-│   │   └── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   ├── 
-│   │
-│   └── 
+├── 
+│ 
 │ 
 ├── .gitignore
 │
@@ -161,9 +116,8 @@ To start the app use the following command
 Description of revisions made to the app - __App Start Date:  11/09/2019__
 
 - [ ] Dev - File and directory structure creation  - 
-- [ ] Dev - Firebase cloud database creation - 
-- [ ] Dev - Update dependencies - 
-- [ ] Dev - Website wire framing -
+- [ ] Dev - Website wire framing - 
+- [ ] Dev - MySQL database setup -
 - [ ] Dev - Website coding - 
 - [ ] Dev - File and directory structure cleanup - 
 - [ ] Dev - Final testing - 
