@@ -1,7 +1,6 @@
 # MyInvDB, a simple to use inventory app
 
-MyInvDB is a simple PHP, MySQL, Bootstrap responsive design simple to use inventory app.
-
+MyInvDB is a simple PHP, MySQL, Bootstrap simple to use inventory app.
 
 
 
@@ -9,29 +8,31 @@ MyInvDB is a simple PHP, MySQL, Bootstrap responsive design simple to use invent
 
 __Project Status - In Start Up Mode  /  Start Date: 11/09/2019__
 
-----
+------
 
 ### Table of Contents
 
-  -  MyInvDB App Description
-  -  Features to Have 
-  -  Website Technologies 
-  -  The Build Process
-  -  How to Use This App
-  -  File and Directory Structure
-  -  Revision History
+- MyInvDB App Description
+- Features to Have 
+- Website Technologies 
+- The Build Process
+- How to Use This App
+- File and Directory Structure
+- Revision History
 
-----
+------
 
 ### MyInvDB App Description
+
 App .
 
-----
+------
 
 ### Features to Have:
+
 - Use 
 
-----
+------
 
 ### Website Technologies
 
@@ -39,17 +40,20 @@ Description of website technologies used to develop this app.
 
 - 
 - 
-
 - All of them are transitive dependencies of the provided npm package.
   ​
 
 __<u>Dependencies</u>__
 
-    more to come here
+```
+more to come here
+```
 
 __<u>devDependencies</u>__
 
-    more to come here
+```
+more to come here
+```
 
 
 
@@ -77,7 +81,7 @@ To start the app use the following command
 
   Open http://localhost:3000 to view it in the browser.
 
-----
+------
 
 ### File and Directory Structure
 
@@ -143,9 +147,9 @@ To start the app use the following command
 │ 
 ├── .gitignore
 │
-├── package.json
+├── 
 │
-├── package-lock.json
+├── 
 │
 └── README.md            
 ```
@@ -156,10 +160,10 @@ To start the app use the following command
 
 Description of revisions made to the app - __App Start Date:  11/09/2019__
 
-  - [ ] Dev - File and directory structure creation  - 
-  - [ ] Dev - Firebase cloud database creation - 
-  - [ ] Dev - Update dependencies - 
-  - [ ] Dev - Website wire framing -
-  - [ ] Dev - Website coding - 
-  - [ ] Dev - File and directory structure cleanup - 
-  - [ ] Dev - Final testing - 
+- [ ] Dev - File and directory structure creation  - 
+- [ ] Dev - Firebase cloud database creation - 
+- [ ] Dev - Update dependencies - 
+- [ ] Dev - Website wire framing -
+- [ ] Dev - Website coding - 
+- [ ] Dev - File and directory structure cleanup - 
+- [ ] Dev - Final testing - 
