@@ -28,7 +28,7 @@
             <div style="height: 300px"></div>
             <p class="lead mb-0">You've reached the end!</p>
             <!-- Top Navigation & Logo -->
-            <?php include 'includes/bottom_nav.html';?>
+            <!-- <?php include 'includes/bottom_nav.html';?> -->
             <!-- Top Navigation & Logo End -->
             <hr>
             <!-- Copyright Starts -->
