@@ -6,7 +6,7 @@ partid VARCHAR (255),
 item VARCHAR (100) NOT NULL,
 description VARCHAR (255),
 manufacturer VARCHAR (50),
-price INTEGER (11),
+price decimal(11,2),
 qty INTEGER (4),
 stockstatus BOOLEAN DEFAULT true,
 PRIMARY KEY (id)
