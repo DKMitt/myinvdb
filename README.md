@@ -6,7 +6,7 @@ MyInvDB is a simple PHP, MySQL, Bootstrap simple to use inventory app.
 
 
 
-__Project Status - In Start Up Mode  /  Start Date: 11/09/2019__
+__Project Status - In Start Up Mode  /  Last Updated: 11/16/2019__
 
 ------
 
@@ -87,7 +87,7 @@ To start the app use the following command
 
 ```
 .
-├── 
+├── css
 │   │
 │   ├── 
 │   │
@@ -95,14 +95,25 @@ To start the app use the following command
 │   │
 │   ├── 
 │   │
-│   └── 
+│   └── style.css
 │ 
-├── 
+├── db
+│   │
+│   ├── schema.sql
+│   │
+│   └── seeds.sql
 │ 
+├── includes
+│   │
+│   ├── bottom_nav.html
+│   │
+│   ├── copyright.php
+│   │
+│   └── top_nav.html
 │ 
 ├── .gitignore
 │
-├── 
+├── index.php
 │
 ├── 
 │
@@ -113,9 +124,10 @@ To start the app use the following command
 
 ### Revision History 
 
-Description of revisions made to the app - __App Start Date:  11/09/2019__
+Description of revisions made to the app - __App Last Updated Date:  11/16/2019__
 
 - [ ] Dev - File and directory structure creation  - 
+- [ ] Dev - Database schema.sql and seeds.sql created  - 11/16/2019
 - [ ] Dev - Website wire framing - 
 - [ ] Dev - MySQL database setup -
 - [ ] Dev - Website coding - 
