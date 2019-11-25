@@ -8,6 +8,8 @@ description VARCHAR (255),
 manufacturer VARCHAR (50),
 price decimal(11,2),
 qty INTEGER (4),
+prod_img VARCHAR (100),
+prod_url VARCHAR (255),
 stockstatus BOOLEAN DEFAULT true,
 PRIMARY KEY (id)
 );
