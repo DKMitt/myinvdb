@@ -1,7 +1,7 @@
-# MyInvDB, a simple to use inventory app
+# MyInvDB, a simple inventory app
 
-MyInvDB will use PHP, MySQL and Botstrap 4
-
+MyInvDB uses PHP, MySQL and Botstrap 4
+![MyInvDB Wireframe](readme_assets/myinvdb.gif)
 
 __Current Project Status:__  
 Currently Wireframing and Working on Project Procedures, the README is in a working state.
@@ -21,6 +21,7 @@ __Project Status - In Start Up Mode  /  Last Updated: 11/25/2019__
 - How to Use This App
 - File and Directory Structure
 - Revision History
+- Resources
 
 ---
 
@@ -52,7 +53,11 @@ Description of how this project was started and the process of putting it togeth
 
 As with any project planning is always a good thing to help make your work flow go smooth and not over look things if possible. I started with a few pieces of paper and scribbled away for a little while and came up with my initial wireframe then moved on to use [Evolus Pencil](http://pencil.evolus.vn) to make a better looking version.
 
-(images coming here)
+![MyInvDB Wireframe](readme_assets/myinvdb_home_list_view.jpg)
+
+A [PDF file](readme_assets/MyInvDB-Wireframe.pdf) and All of the large images that make up the wireframe are available for viewing or download in the readme_assets folder.
+
+
 
 
 On to creating the procedures list for coding out the app.
@@ -65,9 +70,13 @@ Setting up the MySQL database is next on my list, use MyPHPAdmin creating a new 
 (discuss creation process coming here)
 
 
+
+
 Moving forward to setting up the files and directory structur (seen below)
 
 (procedures coming here)
+
+
 
 
 Coding! Here We Go! Starting to Code!
@@ -126,23 +135,23 @@ more to come.
 │   │
 │   └── top_nav.html
 │ 
-├── readme_img
+├── readme_assets
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_add.jpg
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_edit.jpg
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_home_card_view.jpg
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_home_detailed_info_available.jpg
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_home_detailed_info_not_available.jpg
 │   │
-│   ├── xx.jpg
+│   ├── myinvdb_home_list_view.jpg
 │   │
-│   ├── xx.jpg
+│   ├── MyInvDB-Wireframe.jpg
 │   │
-│   └── xx.jpg
+│   └── myinvdb.gif
 │ 
 ├── .gitignore
 │
@@ -159,7 +168,7 @@ Description of revisions made to the app - __App Last Updated Date:  11/25/2019_
 
 - [x] Dev - File and directory structure creation started
 - [x] Dev - Database schema.sql and seeds.sql created  
-- [ ] Dev - Website wireframing - __in process 11/25/19__
+- [x] Dev - Website wireframing 
 - [x] Dev - MySQL database setup 
 - [ ] Dev - Website coding 
 - [ ] Dev - File and directory structure cleanup 
