@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="en">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css\style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    </head>
-    <body>
+<head>
+  <title>MyInvDB</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css\style.css">
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -33,7 +32,6 @@
         <!-- Top Navigation & Logo -->
         <!-- <?php include 'includes/bottom_nav.html'; ?> -->
         <!-- Top Navigation & Logo End -->
-
         <hr>
         <!-- Copyright Starts -->
         <?php include 'includes/copyright.php'; ?>
