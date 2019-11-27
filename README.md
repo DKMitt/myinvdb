@@ -3,24 +3,20 @@
 MyInvDB uses PHP, MySQL and Botstrap 4
 ![MyInvDB Wireframe](readme_assets/myinvdb.gif)
 
-__Current Project Status:__  
+__Current Project Status:__
 Finishing up Project Procedures, the README is in a working state.
 
-
-
-__Project Status - In Start Up Mode  /  Last Updated: 11/25/2019__
-
-
+## Project Status - In Start Up Mode  /  Last Updated: 11/25/2019
 
 ---
 
-### Table of Contents
+## Table of Contents
 
 - MyInvDB App Description
 
-- Features to Have 
+- Features to Have
 
-- Website Technologies 
+- Website Technologies
 
 - The Build Process
 
@@ -32,21 +28,17 @@ __Project Status - In Start Up Mode  /  Last Updated: 11/25/2019__
 
 - Resources
 
-  
-
 ---
 
 ### MyInvDB App Description
 
 more to come
 
-
-
 ---
 
-### Features to Have:
+### Features to Have
 
-- Basic CRUD app (Create, Read, Update, Delete) 
+- Basic CRUD app (Create, Read, Update, Delete)
 
 - Display products in either a list or card view
 
@@ -55,8 +47,6 @@ more to come
 - Link to the Manufacturers website product information page per product
 
 - Print inventory list as a pdf or send to printer
-
-  
 
 ---
 
@@ -70,8 +60,6 @@ Description of website technologies used to develop this app.
 
 - Bootstrap 4.0
 
-  
-
 ---
 
 ### The Build Process
@@ -80,43 +68,29 @@ Description of how this project was started and the process of putting it togeth
 
 As with any project planning is always a good thing to help make your work flow go smooth and not over look things if possible. I started with a few pieces of paper and scribbled away for a little while and came up with my initial wireframe then moved on to use [Evolus Pencil](http://pencil.evolus.vn) to make a better looking version.
 
-
-**Wireframe of the Project**
+#### Wireframe of the Project
 
 | ![MyInvDB Wireframe](readme_assets/myinvdb_home_list_view.jpg) | ![MyInvDB Wireframe](readme_assets/myinvdb_home_card_view.jpg) |     ![MyInvDB Wireframe](readme_assets/myinvdb_edit.jpg)     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |     ![MyInvDB Wireframe](readme_assets/myinvdb_add.jpg)      | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_available.jpg) | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_not_available.jpg) |
 
-
 A [PDF file](readme_assets/MyInvDB-Wireframe.pdf) and All of the large images that make up the wireframe are available for viewing or download in the readme_assets folder.
-
-
-
 
 On to creating the procedures list for coding out the app.
 
 (procedures coming here)
 
-
-Setting up the MySQL database is next on my list, use MyPHPAdmin to create a new database with the name "*myinvdb*" and a table called "*items*" and populate the database with a few seeds (data).  I used [MySQL Workbench](https://www.mysql.com/products/workbench/) and ran a couple sql script to create the database, table and populate the database (you will find those files in the db folder). I will not be covering how to setup your working environment or how to use [MySQL Workbench](https://www.mysql.com/products/workbench/) in this project. 
+Setting up the MySQL database is next on my list, use MyPHPAdmin to create a new database with the name "*myinvdb*" and a table called "*items*" and populate the database with a few seeds (data).  I used [MySQL Workbench](https://www.mysql.com/products/workbench/) and ran a couple sql script to create the database, table and populate the database (you will find those files in the db folder). I will not be covering how to setup your working environment or how to use [MySQL Workbench](https://www.mysql.com/products/workbench/) in this project.
 
 (discuss creation process coming here)
-
-
-
 
 Moving forward to setting up the files and directory structur (seen below)
 
 (procedures coming here)
 
-
-
-
 Coding! Here We Go! Starting to Code!
 
 (more to be coming here)
-
-
 
 ---
 
@@ -126,24 +100,22 @@ Description of how to use the app
 
 more to come.
 
-
-
 ---
 
 ### File and Directory Structure
 
-```
+```tree
 .
 ├── css
 │   │
 │   └── style.css
-│ 
+│
 ├── db
 │   │
 │   ├── schema.sql
 │   │
 │   └── seeds.sql
-│ 
+│
 ├── images
 │   │
 │   ├── 189.jpg
@@ -169,7 +141,7 @@ more to come.
 │   ├── copyright.php
 │   │
 │   └── top_nav.html
-│ 
+│
 ├── readme_assets
 │   │
 │   ├── myinvdb_add.jpg
@@ -187,39 +159,34 @@ more to come.
 │   ├── MyInvDB-Wireframe.jpg
 │   │
 │   └── myinvdb.gif
-│ 
+│
 ├── .gitignore
 │
 ├── index.php
 │
-└── README.md            
+└── README.md
 ```
-
-
-
-
 
 ---
 
-### Revision History 
+### Revision History
 
 Description of revisions made to the app - __App Last Updated Date:  11/25/2019__
 
 - [x] Dev - File and directory structure creation started
 - [x] Dev - Database schema.sql and seeds.sql created  
-- [x] Dev - Website wireframing 
-- [x] Dev - MySQL database setup 
-- [ ] Dev - Website coding 
-- [ ] Dev - File and directory structure cleanup 
-- [ ] Dev - Final testing 
+- [x] Dev - Website wireframing
+- [x] Dev - MySQL database setup
+- [ ] Dev - Website coding
+- [ ] Dev - File and directory structure cleanup
+- [ ] Dev - Final testing
   
-
 ---
 
 ### Resources
 
 Resources used for this app
 
-- [Evolus Pencil](http://pencil.evolus.vn/) 
+- [Evolus Pencil](http://pencil.evolus.vn/)
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - [WampServer](http://www.wampserver.com/)
