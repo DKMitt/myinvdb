@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>MyInvDB About the App</title>
+  <title>MyInvDB - About the App</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
   <div class="container">
     <div class="card border-0 shadow my-5">
       <div class="card-body p-5">
-        <h3 class="font-weight-light"><img src="images/logo-40.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="MyInvDB Logo"> MyInvDB - About</h3>
+        <h3 class="font-weight-light"><img src="images/logo-40.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="MyInvDB Logo"> About</h3>
         <hr>
         <p class="lead">About the MyInvDB Inventory App</p>
         <p class="lead">more to come</p>

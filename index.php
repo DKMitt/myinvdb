@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>MyInvDB</title>
+  <title>MyInvDB Inventory App</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +26,7 @@
   <div class="container">
     <div class="card border-0 shadow my-5">
       <div class="card-body p-5">
-        <h3 class="font-weight-light"><img src="images/logo-40.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="MyInvDB Logo"> MyInvDB</h3>
+        <h3 class="font-weight-light"><img src="images/logo-40.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="MyInvDB Logo"> Inventory</h3>
         <hr>
         <div class="top-icons"><a href="#"><i class="fas fa-th-list"></i></a> <a href="#"><i class="fas fa-th"></i></a> <a href="#"><i class="fas fa-print"></i></a> <a href="#add-edit-form" data-toggle="collapse"><i class="fas fa-plus-square"></i></a></div>
 
