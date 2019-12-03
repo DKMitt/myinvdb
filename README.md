@@ -3,10 +3,10 @@
 MyInvDB uses PHP, MySQL and Botstrap 4
 ![MyInvDB Wireframe](readme_assets/myinvdb.gif)
 
-__Current Project Status:__
-Finishing up Project Procedures, the README is in a working state.
+**Current Project Status:**
+Coding the index and logic pages, the README is in a working state.
 
-## Project Status - In Start Up Mode  /  Last Updated: 11/25/2019
+## Project Status - In Mid-Project State / Last Updated: 12/03/2019
 
 ---
 
@@ -38,13 +38,13 @@ more to come
 
 ### Features to Have
 
-- Basic CRUD app (Create, Read, Update, Delete)
+- Basic CRUD app (Create, Read, Update, Delete) of inventory products
 
 - Display products in either a list or card view
 
-- Display images of products
+- Upload images and display in list view, card viewand detail view
 
-- Link to the Manufacturers website product information page per product
+- Link to the Manufacturers website product information page for each product when available
 
 - Print inventory list as a pdf or send to printer
 
@@ -60,6 +60,8 @@ Description of website technologies used to develop this app.
 
 - Bootstrap 4.0
 
+- Font Awesome
+
 ---
 
 ### The Build Process
@@ -70,9 +72,9 @@ As with any project planning is always a good thing to help make your work flow 
 
 #### Wireframe of the Project
 
-| ![MyInvDB Wireframe](readme_assets/myinvdb_home_list_view.jpg) | ![MyInvDB Wireframe](readme_assets/myinvdb_home_card_view.jpg) |     ![MyInvDB Wireframe](readme_assets/myinvdb_edit.jpg)     |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|     ![MyInvDB Wireframe](readme_assets/myinvdb_add.jpg)      | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_available.jpg) | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_not_available.jpg) |
+| ![MyInvDB Wireframe](readme_assets/myinvdb_home_list_view.jpg) |        ![MyInvDB Wireframe](readme_assets/myinvdb_home_card_view.jpg)        |               ![MyInvDB Wireframe](readme_assets/myinvdb_edit.jpg)               |
+| :------------------------------------------------------------: | :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+|      ![MyInvDB Wireframe](readme_assets/myinvdb_add.jpg)       | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_available.jpg) | ![MyInvDB Wireframe](readme_assets/myinvdb_home_detailed_info_not_available.jpg) |
 
 A [PDF file](readme_assets/MyInvDB-Wireframe.pdf) and All of the large images that make up the wireframe are available for viewing or download in the readme_assets folder.
 
@@ -80,7 +82,7 @@ On to creating the procedures list for coding out the app.
 
 (procedures coming here)
 
-Setting up the MySQL database is next on my list, use MyPHPAdmin to create a new database with the name "*myinvdb*" and a table called "*items*" and populate the database with a few seeds (data).  I used [MySQL Workbench](https://www.mysql.com/products/workbench/) and ran a couple sql script to create the database, table and populate the database (you will find those files in the db folder). I will not be covering how to setup your working environment or how to use [MySQL Workbench](https://www.mysql.com/products/workbench/) in this project.
+Setting up the MySQL database is next on my list, use MyPHPAdmin to create a new database with the name "_myinvdb_" and a table called "_items_" and populate the database with a few seeds (data). I used [MySQL Workbench](https://www.mysql.com/products/workbench/) and ran a couple sql script to create the database, table and populate the database (you will find those files in the db folder). I will not be covering how to setup your working environment or how to use [MySQL Workbench](https://www.mysql.com/products/workbench/) in this project.
 
 (discuss creation process coming here)
 
@@ -118,21 +120,17 @@ more to come.
 │
 ├── images
 │   │
-│   ├── 189.jpg
+│   ├── bg.jpg
 │   │
-│   ├── 326.jpg
+│   ├── favicon.ico
 │   │
-│   ├── 3046.jpg
+│   ├── logo-30.png
 │   │
-│   ├── 3591.jpg
+│   ├── logo-40.png
 │   │
-│   ├── 3686.jpg
+│   ├── logo-75.png
 │   │
-│   ├── 3898.jpg
-│   │
-│   ├── 4007.jpg
-│   │
-│   └── bg.jpg
+│   └── logo.png
 │
 ├── includes
 │   │
@@ -141,6 +139,12 @@ more to come.
 │   ├── copyright.php
 │   │
 │   └── top_nav.html
+│
+├── logic
+│   │
+│   ├── actions.php
+│   │
+│   └── config.php
 │
 ├── readme_assets
 │   │
@@ -156,11 +160,64 @@ more to come.
 │   │
 │   ├── myinvdb_home_list_view.jpg
 │   │
-│   ├── MyInvDB-Wireframe.jpg
+│   ├── MyInvDB-Procedures.pdf
+│   │
+│   ├── MyInvDB-Wireframe.pdf
 │   │
 │   └── myinvdb.gif
 │
+├── uploads
+│   │
+│   ├── 189.jpg
+│   │
+│   ├── 326.jpg
+│   │
+│   ├── 3046.jpg
+│   │
+│   ├── 3591.jpg
+│   │
+│   ├── 3686.jpg
+│   │
+│   ├── 3898.jpg
+│   │
+│   └── 4007.jpg
+│
+├── webfonts
+│   │
+│   ├── fa-brands-400.eot
+│   │
+│   ├── fa-brands-400.svg
+│   │
+│   ├── fa-brands-400.ttf
+│   │
+│   ├── fa-brands-400.woff
+│   │
+│   ├── fa-brands-400.woff2
+│   │
+│   ├── fa-regular-400.eot
+│   │
+│   ├── fa-regular-400.svg
+│   │
+│   ├── fa-regular-400.ttf
+│   │
+│   ├── fa-regular-400.woff
+│   │
+│   ├── fa-regular-400.woff2
+│   │
+│   ├── fa-solid-900.eot
+│   │
+│   ├── fa-solid-900.svg
+│   │
+│   ├── fa-solid-900.ttf
+│   │
+│   ├── fa-solid-900.woff
+│   │
+│   └── fa-solid-900.woff2
+│
+│
 ├── .gitignore
+│
+├── about.php
 │
 ├── index.php
 │
@@ -171,16 +228,16 @@ more to come.
 
 ### Revision History
 
-Description of revisions made to the app - __App Last Updated Date:  11/25/2019__
+Description of revisions made to the app - **App Last Updated Date: 12/03/2019**
 
 - [x] Dev - File and directory structure creation started
-- [x] Dev - Database schema.sql and seeds.sql created  
+- [x] Dev - Database schema.sql and seeds.sql created
 - [x] Dev - Website wireframing
 - [x] Dev - MySQL database setup
 - [ ] Dev - Website coding
 - [ ] Dev - File and directory structure cleanup
 - [ ] Dev - Final testing
-  
+
 ---
 
 ### Resources
