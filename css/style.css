@@ -21,6 +21,10 @@ body {
   padding: 2rem !important;
 }
 
+.mt-2rem {
+  margin-top: 2rem !important;
+}
+
 #copyright p {
   text-align: center;
 }
@@ -63,6 +67,49 @@ tbody {
 
 .table .thead-light {
   text-align: center;
+}
+
+.prodimg .img-fluid {
+  border: 1px solid black;
+}
+
+.btn-add {
+  padding: 20px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn-edit {
+  padding: 20px 0;
+  background-color: teal;
+  border: 1px solid teal;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+/* form-bg color set to edit color */
+.form-bg {
+  background-color: #abd8d5;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+/* form-bg color set to edit color */
+.form-bg-edit {
+  background-color: #abd8d5;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+/* form-bg color set to add color */
+.form-bg-add {
+  background-color: #b3d8e2;
+  border: 1px solid black;
+  padding: 0 20px;
 }
 
 @media (min-width: 1200px) {

@@ -31,20 +31,12 @@
 
         <div id="add-edit-form" class="collapse mt-2 mb-2">
 
-          <div class="container">
-            <h3 class="text-center">Add+ New Item</h3>
+          <div class="container form-bg-add">
+            <h3 class="text-center pt-3">Add+ New Item</h3>
 
             <form action="#" method="post" enctyp="multi/part-data">
               <div class="row">
-                <div class="col-sm-2">
-                  <div class="col">
-                    <label for="img_url">Image Path:</label>
-                    <input type="file" class="custom-file" id="img_url" placeholder=" img_url" name="img_url">
-                  </div>
-                </div>
-
-
-                <div class="col-sm-8">
+                <div class="col-sm-9">
                   <div class="row">
                     <div class="col">
                       <label for="partid">Part ID:</label>
@@ -61,11 +53,9 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="item">Item:</label>
+                      <label for="item">Item Name:</label>
                       <input type="text" class="form-control" id="item" placeholder="item" name="item">
                     </div>
-                  </div>
-                  <div class="row">
                     <div class="col">
                       <label for="manufacturer">Manufacturer:</label>
                       <input type="text" class="form-control" id="manufacturer" placeholder="manufacturer" name="manufacturer">
@@ -77,17 +67,26 @@
                       <input type="text" class="form-control" id="prod_url" placeholder="prod_url" name="prod_url">
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="description">Description:</label>
+                      <textarea type="text" class="form-control" rows="5" id="description" placeholder="description" name="description"></textarea>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-sm-2 mt-5">
+                <div class="col-sm-3 mt-5">
                   <div class="col">
-                    <button type="submit" class="btn btn-primary btn-block">Add+</button>
+                    <div class="prodimg">
+                      <img src="uploads/189.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" id="prodimg">
+                      <label for="img_url">Select Image:</label>
+                      <input type="file" class="custom-file" id="img_url" placeholder=" img_url" name="img_url">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-5 btn-add"> Add+ </button>
                   </div>
                 </div>
               </div>
-              <hr>
-
-
+              <hr class="mt-2rem">
             </form>
             <br>
           </div>

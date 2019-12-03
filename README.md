@@ -3,7 +3,7 @@
 MyInvDB uses PHP, MySQL and Botstrap 4
 ![MyInvDB Wireframe](readme_assets/myinvdb.gif)
 
-**Current Project Status:**
+**Currently Working On:**
 Coding the index and logic pages, the README is in a working state.
 
 ## Project Status - In Mid-Project State / Last Updated: 12/03/2019
@@ -42,7 +42,7 @@ more to come
 
 - Display products in either a list or card view
 
-- Upload images and display in list view, card viewand detail view
+- Upload images and be available to display in list view, card view and detail view
 
 - Link to the Manufacturers website product information page for each product when available
 
