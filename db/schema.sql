@@ -1,11 +1,11 @@
 CREATE DATABASE myinvdb;
 USE myinvdb;
-CREATE TABLE items (
+CREATE TABLE products (
 id INTEGER (11) AUTO_INCREMENT NOT NULL,
-partid VARCHAR (255),
-item VARCHAR (100) NOT NULL,
-description VARCHAR (255),
-manufacturer VARCHAR (50),
+prod_id VARCHAR (255),
+prod_name VARCHAR (100) NOT NULL,
+prod_desc VARCHAR (255),
+mfr VARCHAR (50),
 price decimal(11,2),
 qty INTEGER (4),
 prod_img VARCHAR (100),
