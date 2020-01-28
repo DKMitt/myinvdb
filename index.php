@@ -1,3 +1,7 @@
+<?php
+include 'logic/actions.php';
+?>
+
 <!doctype html>
 <html lang="en">
 

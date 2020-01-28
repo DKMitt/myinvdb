@@ -71,6 +71,7 @@ tbody {
 
 .prodimg .img-fluid {
   border: 1px solid black;
+  width: 275px;
 }
 
 .btn-add {
