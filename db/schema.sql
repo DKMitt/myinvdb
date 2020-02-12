@@ -1,6 +1,6 @@
 CREATE DATABASE myinvdb;
 USE myinvdb;
-CREATE TABLE products (
+CREATE TABLE inventory (
 id INTEGER (11) AUTO_INCREMENT NOT NULL,
 prod_id VARCHAR (255),
 prod_name VARCHAR (100) NOT NULL,
