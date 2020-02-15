@@ -10,7 +10,7 @@ include 'logic/actions.php';
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" type="text/css" href="css/all.css">
   <!-- Bootstrap CDN-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -43,38 +43,38 @@ include 'logic/actions.php';
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col">
-                      <label for="partid">Part ID:</label>
-                      <input type="text" class="form-control" id="partid" placeholder="partid" name="partid">
+                      <label for="prod_id">Part #:</label>
+                      <input type="text" class="form-control" id="prod_id" placeholder="Part #" name="prod_id">
                     </div>
                     <div class="col">
                       <label for="price">Price:</label>
-                      <input type="text" class="form-control" id="price" placeholder="price" name="price">
+                      <input type="text" class="form-control" id="price" placeholder="Price Each" name="price">
                     </div>
                     <div class="col">
                       <label for="qty">Quantity:</label>
-                      <input type="text" class="form-control" id="qty" placeholder="qty" name="qty">
+                      <input type="text" class="form-control" id="qty" placeholder="Qty" name="qty">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="item">Item Name:</label>
-                      <input type="text" class="form-control" id="item" placeholder="item" name="item">
+                      <label for="prod_name">Item:</label>
+                      <input type="text" class="form-control" id="prod_name" placeholder="Item" name="prod_name">
                     </div>
                     <div class="col">
-                      <label for="manufacturer">Manufacturer:</label>
-                      <input type="text" class="form-control" id="manufacturer" placeholder="manufacturer" name="manufacturer">
+                      <label for="mfr">Manufacturer:</label>
+                      <input type="text" class="form-control" id="mfr" placeholder="Manufacturer" name="mfr">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
                       <label for="prod_url">Product URL:</label>
-                      <input type="text" class="form-control" id="prod_url" placeholder="prod_url" name="prod_url">
+                      <input type="text" class="form-control" id="prod_url" placeholder="MFR Product URL" name="prod_url">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="description">Description:</label>
-                      <textarea type="text" class="form-control" rows="5" id="description" placeholder="description" name="description"></textarea>
+                      <label for="prod_desc">Description:</label>
+                      <textarea type="text" class="form-control" rows="5" id="prod_desc" placeholder="Description" name="prod_desc"></textarea>
                     </div>
                   </div>
                 </div>
@@ -83,8 +83,8 @@ include 'logic/actions.php';
                   <div class="col">
                     <div class="prodimg">
                       <img src="uploads/189.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" id="prodimg">
-                      <label for="img_url">Select Image:</label>
-                      <input type="file" class="custom-file" id="img_url" placeholder=" img_url" name="img_url">
+                      <label for="prod_img">Select Image:</label>
+                      <input type="file" class="custom-file" id="prod_img" placeholder="Product Image" name="prod_img">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block mt-5 btn-add"> Add+ </button>
                   </div>
