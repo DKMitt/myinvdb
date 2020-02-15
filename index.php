@@ -1,6 +1,7 @@
 <?php
-include 'logic/actions.php';
+include 'actions.php';
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -30,7 +31,7 @@ include 'logic/actions.php';
       <div class="card-body p-5">
         <h3 class="font-weight-light"><img src="images/logo-40.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="MyInvDB Logo"> Inventory</h3>
         <hr>
-        <div class="top-icons"><a href="#"><i class="fas fa-th-list"></i></a> <a href="#"><i class="fas fa-th"></i></a> <a href="#"><i class="fas fa-print"></i></a> <a href="#add-edit-form" data-toggle="collapse"><i class="fas fa-plus-square"></i></a></div>
+        <div class="top-icons"><a href="#"><i class="fas fa-th-list" alt="List View"></i></a> <a href="#"><i class="fas fa-th" alt="Card View"></i></a> <a href="#"><i class="fas fa-print" alt="Print"></i></a> <a href="#add-edit-form" data-toggle="collapse"><i class="fas fa-plus-square" alt="Add Product"></i></a></div>
 
 
         <div id="add-edit-form" class="collapse mt-2 mb-2">
@@ -38,43 +39,57 @@ include 'logic/actions.php';
           <div class="container form-bg-add">
             <h3 class="text-center pt-3">Add+ New Item</h3>
 
-            <form action="#" method="post" enctyp="multi/part-data">
+            <form action="index.php" method="post" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col">
-                      <label for="prod_id">Part #:</label>
-                      <input type="text" class="form-control" id="prod_id" placeholder="Part #" name="prod_id">
+                      <div class="form-group">
+                        <label for="prod_id">Part #:</label>
+                        <input type="text" class="form-control" id="prod_id" placeholder="Part #" name="prod_id">
+                      </div>
                     </div>
                     <div class="col">
-                      <label for="price">Price:</label>
-                      <input type="text" class="form-control" id="price" placeholder="Price Each" name="price">
+                      <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="text" class="form-control" id="price" placeholder="Price Each" name="price">
+                      </div>
                     </div>
                     <div class="col">
-                      <label for="qty">Quantity:</label>
-                      <input type="text" class="form-control" id="qty" placeholder="Qty" name="qty">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <label for="prod_name">Item:</label>
-                      <input type="text" class="form-control" id="prod_name" placeholder="Item" name="prod_name">
-                    </div>
-                    <div class="col">
-                      <label for="mfr">Manufacturer:</label>
-                      <input type="text" class="form-control" id="mfr" placeholder="Manufacturer" name="mfr">
+                      <div class="form-group">
+                        <label for="qty">Quantity:</label>
+                        <input type="text" class="form-control" id="qty" placeholder="Qty" name="qty">
+                      </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="prod_url">Product URL:</label>
-                      <input type="text" class="form-control" id="prod_url" placeholder="MFR Product URL" name="prod_url">
+                      <div class="form-group">
+                        <label for="prod_name">Item:</label>
+                        <input type="text" class="form-control" id="prod_name" placeholder="Item" name="prod_name">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="mfr">Manufacturer:</label>
+                        <input type="text" class="form-control" id="mfr" placeholder="Manufacturer" name="mfr">
+                      </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="prod_desc">Description:</label>
-                      <textarea type="text" class="form-control" rows="5" id="prod_desc" placeholder="Description" name="prod_desc"></textarea>
+                      <div class="form-group">
+                        <label for="prod_url">Product URL:</label>
+                        <input type="text" class="form-control" id="prod_url" placeholder="MFR Product URL" name="prod_url">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="prod_desc">Description:</label>
+                        <textarea type="text" class="form-control" rows="5" id="prod_desc" placeholder="Description" name="prod_desc"></textarea>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -82,22 +97,37 @@ include 'logic/actions.php';
                 <div class="col-sm-3 mt-5">
                   <div class="col">
                     <div class="prodimg">
-                      <img src="uploads/189.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" id="prodimg">
-                      <label for="prod_img">Select Image:</label>
-                      <input type="file" class="custom-file" id="prod_img" placeholder="Product Image" name="prod_img">
+
+                      <img src="images/choose-image-400.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" id="prodimg">
+
+                      <div class="form-group">
+                        <label for="prod_img">Select Image:</label>
+                        <input type="file" class="form-control-file" name="prod_img" id="prod_img">
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-5 btn-add"> Add+ </button>
+                    <div class="form-group">
+                      <button type="reset" name="reset-btn" class="btn btn-info btn-block mt-2 btn-add-reset"> Reset </button>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" name="add-btn" class="btn btn-primary btn-block mt-2 btn-add-reset"> Add+ </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <hr class="mt-2rem">
             </form>
             <br>
           </div>
 
         </div>
 
+        <!-- checks $msg variable to see if not empty and displays message with styling -->
+        <?php if (!empty($msg)) : ?>
+          <div class="alert <?php echo $css_styling; ?>">
+            <?php echo $msg; ?>
+          </div>
+        <?php endif; ?>
 
+        <!-- table starts -->
         <div class="table-responsive">
           <table class="table table-hover item-icons">
             <thead class="thead-light">
@@ -107,7 +137,7 @@ include 'logic/actions.php';
                 <th>Manufacturer</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th> <i class="fas fa-info-circle" alt="Detailed Info"></i> <i class="fas fa-globe"></i> <i class="fas fa-edit"></i> <i class="far fa-trash-alt"></i></th>
+                <th> <i class="fas fa-info-circle" alt="Detailed Info"></i> <i class="fas fa-globe" alt="Mfr Website"></i> <i class="fas fa-edit" alt="Edit"></i> <i class="far fa-trash-alt" alt="Delete"></i></th>
               </tr>
             </thead>
             <tbody>
@@ -117,7 +147,7 @@ include 'logic/actions.php';
                 <td>Smith & Company</td>
                 <td>12.95</td>
                 <td>3</td>
-                <td><a href="#"><i class="fas fa-info-circle"></i></a> <a href="#"><i class="fas fa-globe"></i></a> <a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="far fa-trash-alt"></i></a></td>
+                <td><a href="#"><i class="fas fa-info-circle" alt="Detailed Info"></i></a> <a href="#"><i class="fas fa-globe" alt="Mfr Website"></i></a> <a href="#"><i class="fas fa-edit" alt="Edit"></i></a> <a href="#"><i class="far fa-trash-alt" alt="Delete"></i></a></td>
               </tr>
               <tr>
                 <td>12345</td>
@@ -125,7 +155,7 @@ include 'logic/actions.php';
                 <td>Smith & Company</td>
                 <td>12.95</td>
                 <td>3</td>
-                <td><a href="#"><i class="fas fa-info-circle"></i></a> <a href="#"><i class="fas fa-globe"></i></a> <a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="far fa-trash-alt"></i></a></td>
+                <td><a href="#"><i class="fas fa-info-circle" alt="Detailed Info"></i></a> <a href="#"><i class="fas fa-globe" alt="Mfr Website"></i></a> <a href="#"><i class="fas fa-edit" alt="Edit"></i></a> <a href="#"><i class="far fa-trash-alt" alt="Delete"></i></a></td>
               </tr>
 
             </tbody>
@@ -135,9 +165,9 @@ include 'logic/actions.php';
 
         <div style="height: 300px"></div>
         <p class="lead mb-0">You've reached the end!</p>
-        <!-- Top Navigation & Logo -->
+        <!-- Navigation & Logo Starts -->
         <!-- <?php include 'includes/bottom_nav.html'; ?> -->
-        <!-- Top Navigation & Logo End -->
+        <!-- Navigation & Logo End -->
         <hr>
         <!-- Copyright Starts -->
         <?php include 'includes/copyright.php'; ?>

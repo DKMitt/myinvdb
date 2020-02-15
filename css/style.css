@@ -72,10 +72,11 @@ tbody {
 .prodimg .img-fluid {
   border: 1px solid black;
   width: 275px;
+  height: 275px;
 }
 
-.btn-add {
-  padding: 20px 0;
+.btn-add-reset {
+  padding: 10px 40px;
   font-size: 1.3rem;
   font-weight: 600;
 }
