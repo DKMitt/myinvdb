@@ -41,7 +41,7 @@ if (isset($_POST['add-btn'])) {
             $css_styling = "alert-danger";
         }
     } else {
-        $msg = "Your data was received but no image was uploaded!";
-        $css_styling = "alert-warning";
+        $msg = "Database Error: Failed to upload inventory!!";
+        $css_styling = "alert-danger";
     }
 }

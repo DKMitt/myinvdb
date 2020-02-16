@@ -75,10 +75,20 @@ tbody {
   height: 275px;
 }
 
-.btn-add-reset {
-  padding: 10px 40px;
-  font-size: 1.3rem;
+#prodDisplay {
+  display: block;
+  border: 1px solid black;
+  width: 275px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.btn-add {
+  padding: 20px 20px;
+  font-size: 1.0em;
   font-weight: 600;
+  margin: 0 auto;
+  width: 55%;
 }
 
 .btn-edit {

@@ -1,5 +1,10 @@
 <?php
 include 'logic/actions.php';
+
+$sql = "SELECT * FROM inventory";
+
+$result = mysqli_query($conn, $sql);
+$inventory = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
 
@@ -115,6 +120,7 @@ include 'logic/actions.php';
 
         </div>
 
+
         <!-- checks $msg variable to see if not empty and displays message with styling -->
         <?php if (!empty($msg)) : ?>
           <div class="alert <?php echo $css_styling; ?>">
@@ -122,11 +128,13 @@ include 'logic/actions.php';
           </div>
         <?php endif; ?>
 
+
         <!-- table starts -->
         <div class="table-responsive">
           <table class="table table-hover item-icons">
             <thead class="thead-light">
               <tr>
+                <th></th>
                 <th>Part ID</th>
                 <th>Item</th>
                 <th>Manufacturer</th>
@@ -136,23 +144,19 @@ include 'logic/actions.php';
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>12345</td>
-                <td>This is an item</td>
-                <td>Smith & Company</td>
-                <td>12.95</td>
-                <td>3</td>
-                <td><a href="#"><i class="fas fa-info-circle" alt="Detailed Info"></i></a> <a href="#"><i class="fas fa-globe" alt="Mfr Website"></i></a> <a href="#"><i class="fas fa-edit" alt="Edit"></i></a> <a href="#"><i class="far fa-trash-alt" alt="Delete"></i></a></td>
-              </tr>
-              <tr>
-                <td>12345</td>
-                <td>This is a second item</td>
-                <td>Smith & Company</td>
-                <td>12.95</td>
-                <td>3</td>
-                <td><a href="#"><i class="fas fa-info-circle" alt="Detailed Info"></i></a> <a href="#"><i class="fas fa-globe" alt="Mfr Website"></i></a> <a href="#"><i class="fas fa-edit" alt="Edit"></i></a> <a href="#"><i class="far fa-trash-alt" alt="Delete"></i></a></td>
-              </tr>
+              <?php foreach ($inventory as $product) : ?>
 
+                <tr>
+                  <td><img src="uploads/<?php echo $product['prod_img'] ?>" width="80" /></td>
+                  <td><?php echo $product['prod_id'] ?> </td>
+                  <td><?php echo $product['prod_name'] ?> </td>
+                  <td><?php echo $product['mfr'] ?> </td>
+                  <td><?php echo $product['price'] ?> </td>
+                  <td><?php echo $product['qty'] ?> </td>
+                  <td><a href="#"><i class="fas fa-info-circle" alt="Detailed Info"></i></a> <a href="<?php echo $product['prod_url'] ?>" target="blank"><i class="fas fa-globe" alt="Mfr Website"></i></a> <a href="#"><i class="fas fa-edit" alt="Edit"></i></a> <a href="#"><i class="far fa-trash-alt" alt="Delete"></i></a></td>
+                </tr>
+
+              <?php endforeach; ?>
             </tbody>
           </table>
         </div>
